@@ -13,19 +13,19 @@
     Favicons
     =============================================
     -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/pflogo.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/pflogo.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/pflogo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/pflogo.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/pflogo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/pflogo.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/pflogo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/pflogo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/pflogo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/pflogo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/pflogo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/pflogo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/pflogo.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
@@ -63,13 +63,21 @@
           <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img src="assets/images/pflogo.png"></a>
           </div>
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a class="section-scroll btn btn-border-w btn-round" href="#aboutme" data-toggle="dropdown">About Me</a></li>
+              <li class="dropdown"><a class="section-scroll btn btn-border-w btn-round" href="#web" data-toggle="dropdown">Web</a></li>
+              <li class="dropdown"><a class="section-scroll btn btn-border-w btn-round" href="#works-grid" data-toggle="dropdown">My works</a></li>
+              <li class="dropdown"><a class="section-scroll btn btn-border-w btn-round" href="#footer" data-toggle="dropdown">Footer</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
       <section class="home-section bg-dark-60 portfolio-page-header parallax-bg" id="home">
         <div class="titan-caption">
           <div class="caption-content">
             <div class="font-alt mb-30 titan-title-size-1">welcome</div>
-            <div class="font-alt mb-40 titan-title-size-4"><img src="assets/images/pf_1.png"></div><a class="section-scroll btn btn-border-w btn-round" href="#portfolio">Our Works</a>
+            <div class="font-alt mb-40 titan-title-size-4"><img src="assets/images/pf_1.png"></div>
           </div>
         </div>
       </section>
@@ -77,16 +85,16 @@
         <section class="module" id="news">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Latest blog posts</h2>
-                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+              <div class="col-sm-6 col-sm-offset-3" id="aboutme">
+                <h2 class="module-title font-alt">About Me</h2>
+                <div class="module-subtitle font-serif">수용하는 웹디자이너가 되고 싶은 박정서입니다.</div>
               </div>
             </div>
-            <div class="row multi-columns-row post-columns">
+            <div class="row multi-columns-row post-columns" >
               <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="post mb-20">
-                  <div class="post-thumbnail"><a href="#"><img src="assets/images/work-1.jpg" alt="Blog-post Thumbnail"/></a></div>
-                  <div class="post-header font-alt">
+                <div class="post mb-20" id="park">
+                  <div class="post-thumbnail"><a href="#"></a></div>
+                  <div class="post-header font-alt" id="joung">
                     <h2 class="post-title"><a href="#">Our trip to the Alps</a></h2>
                     <div class="post-meta">By&nbsp;<a href="#">Mark Stone</a>&nbsp;| 23 November | 3 Comments
                     </div>
@@ -97,32 +105,79 @@
                   <div class="post-more"><a class="more-link" href="#">Read more</a></div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="col-sm-6 col-md-4 col-lg-4" id="seo">
                 <div class="post mb-20">
-                  <div class="post-thumbnail"><a href="#"><img src="assets/images/work-2.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-thumbnail"><img src="assets/images/박정서.png" alt="Blog-post Thumbnail"/></div>
                   <div class="post-header font-alt">
-                    <h2 class="post-title"><a href="#">Shore after the tide</a></h2>
-                    <div class="post-meta">By&nbsp;<a href="#">Andy River</a>&nbsp;| 11 November | 4 Comments
-                    </div>
                   </div>
-                  <div class="post-entry">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                  </div>
-                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 col-lg-4">
                 <div class="post mb-20">
-                  <div class="post-thumbnail"><a href="#"><img src="assets/images/work-3.jpg" alt="Blog-post Thumbnail"/></a></div>
-                  <div class="post-header font-alt">
-                    <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
-                    <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                  <section class="module_">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2" id="bar">
+                          <h4 class="font-alt mb-0">Titan progress bars</h4>
+                          <hr class="divider-w mt-10 mb-20">
+                          <h6 class="font-alt"><span class="icon-tools-2"></span> Photoshop
+                          </h6>
+                          <div class="progress">
+                            <div class="progress-bar pb-dark" aria-valuenow="60" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+                          </div>
+                          <h6 class="font-alt"><span class="icon-strategy"></span> Illustration
+                          </h6>
+                          <div class="progress">
+                            <div class="progress-bar pb-dark" aria-valuenow="80" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+                          </div>
+                          <h6 class="font-alt"><span class="icon-target"></span> html
+                          </h6>
+                          <div class="progress">
+                            <div class="progress-bar pb-dark" aria-valuenow="50" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+                          </div>
+                          <h6 class="font-alt"><span class="icon-camera"></span> Premiere
+                          </h6>
+                          <div class="progress">
+                            <div class="progress-bar pb-dark" aria-valuenow="90" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+                          </div>
+                          <h6 class="font-alt"><span class="icon-camera"></span> 한글,word
+                          </h6>
+                          <div class="progress">
+                            <div class="progress-bar pb-dark" aria-valuenow="90" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="post-entry">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                  </div>
-                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-8 col-lg-8">
+                <div class="post-images-slider">
+                  <ul class="slides">
+                    <li><img class="center-block" src="assets/images/work-1.jpg" alt="Slider Image"/></li>
+                    <li><img class="center-block" src="assets/images/work-2.jpg" alt="Slider Image"/></li>
+                    <li><img class="center-block" src="assets/images/work-4.jpg" alt="Slider Image"/></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="work-details">
+                  <h5 class="work-details-title font-alt">Project Details</h5>
+                  <p>The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</p>
+                  <ul>
+                    <li><strong>Client: </strong><span class="font-serif"><a href="#" target="_blank">SomeCompany</a></span>
+                    </li>
+                    <li><strong>Date: </strong><span class="font-serif"><a href="#" target="_blank">23 November, 2015</a></span>
+                    </li>
+                    <li><strong>Online: </strong><span class="font-serif"><a href="#" target="_blank">www.example.com</a></span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -130,12 +185,13 @@
         </section>
         <section class="module">
           <div class="container popup_bg00">
-            <div class="row">
-              <div class="col-sm-12">
+            <div class="row" >
+              <div class="col-sm-12" >
                 <ul class="filter font-alt" id="filters">
                   <li><a class="current wow fadeInUp" href="#" data-filter="*">All</a></li>
                   <li><a class="wow fadeInUp" href="#" data-filter=".design" data-wow-delay="0.2s">design</a></li>
                   <li><a class="wow fadeInUp" href="#" data-filter=".logo" data-wow-delay="0.4s">logo</a></li>
+                  <li><a class="wow fadeInUp" href="#" data-filter=".etc" data-wow-delay="0.6s">etc</a></li>
                   <li><a class="wow fadeInUp" href="#" data-filter=".webdesign" data-wow-delay="0.6s">webdesign</a></li>
                 </ul>
               </div>
@@ -183,31 +239,31 @@
                     <h3 class="work-title">BANNER</h3>
                     <div class="work-descr">OUTDOOR</div>
                   </div></a></li>
-              <li class="work-item design"><a href="#">
+              <li class="work-item etc"><a href="#">
                   <div class="work-image"><img src="assets/images/portfolio/cardnews.png" alt="카드뉴스"/></div>
                   <div class="work-caption font-alt">
                     <h3 class="work-title">CARDNEWS</h3>
                     <div class="work-descr">CARDNEWS</div>
                   </div></a></li>
-              <li class="work-item design"><a href="#">
+              <li class="work-item etc"><a href="#">
                   <div class="work-image"><img src="assets/images/portfolio/leflet.png" alt="리플렛앞면"/></div>
                   <div class="work-caption font-alt">
                     <h3 class="work-title">LEFLET</h3>
                     <div class="work-descr">LEFLET</div>
                   </div></a></li>
-              <li class="work-item design"><a href="#">
+              <li class="work-item etc"><a href="#">
                   <div class="work-image"><img src="assets/images/portfolio/poster.png" alt="포스터"/></div>
                   <div class="work-caption font-alt">
                     <h3 class="work-title">POSTER</h3>
                     <div class="work-descr">POSTER</div>
                   </div></a></li>
-              <li class="work-item design"><a href="#">
+              <li class="work-item etc"><a href="#">
                   <div class="work-image"><img src="assets/images/portfolio/pc_ribbon.png" alt="리본엽서"/></div>
                   <div class="work-caption font-alt">
                     <h3 class="work-title">POST CARD</h3>
                     <div class="work-descr">RIBBON</div>
                   </div></a></li>
-              <li class="work-item design"><a href="#">
+              <li class="work-item etc"><a href="#">
                   <div class="work-image"><img src="assets/images/portfolio/pc_winter.png" alt="겨울엽서"/></div>
                   <div class="work-caption font-alt">
                     <h3 class="work-title">POST CARD</h3>
@@ -242,7 +298,7 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-3">
-                <div class="widget">
+                <div class="widget" id="footer">
                   <h5 class="widget-title font-alt">About Titan</h5>
                   <p>The languages only differ in their grammar, their pronunciation and their most common words.</p>
                   <p>Phone: +1 234 567 89 10</p>Fax: +1 234 567 89 10

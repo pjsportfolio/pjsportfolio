@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'LeeSeoyun';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*--------------------------------------------------------------
 	Common
 --------------------------------------------------------------*/
@@ -9,7 +16,7 @@ html {
 
 body {
   background: #fff;
-  font: 400 12px/1.8 "Open Sans", sans-serif;
+  font: 400 12px/1.8 'LeeSeoyun', sans-serif;
   color: #666;
   -webkit-font-smoothing: antialiased;
 }
@@ -253,6 +260,8 @@ a,
 
 .bg-dark {
   background: url(../images/pf_bg60.jpg);
+  width: 100%;
+  height: 100%;
 }
 
 .bg-dark-30:before {
@@ -652,7 +661,7 @@ a,
 --------------------------------------------------------------*/
 .btn {
   border-radius: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Leeseoyun", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -700,7 +709,7 @@ a,
 
 .btn.btn-border-w {
   background: transparent;
-  border: 1px solid #585856;
+  /* border: 1px solid #585856; */
   color: #7666bf;
 }
 
@@ -708,7 +717,7 @@ a,
 .btn.btn-border-w:focus {
   background: #fff;
   border-color: transparent;
-  color: #111;
+  color: #f1c40f;
 }
 
 .btn.btn-d {
@@ -892,14 +901,13 @@ blockquote {
 }
 
 .font-alt {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Leeseoyun", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 .font-serif {
-  font-family: Volkhov, "Times New Roman", sans-serif;
-  font-style: italic;
+  font-family: Volkhov, "Leeseoyun", sans-serif;
 }
 
 .large-text {
@@ -924,7 +932,7 @@ blockquote {
   text-align: center;
   font-size: 16px;
   color: #111;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .module-icon {
@@ -1285,7 +1293,7 @@ General Styles - Owlcarousel
 
 .navbar-custom .nav li > a {
   position: relative;
-  color: rgba(255, 255, 255, 0.7);
+  color: #7666bf;
 }
 
 .navbar-custom .dropdown-menu > li > a {
@@ -1867,7 +1875,7 @@ Google map
   text-align: center;
   list-style: none;
   padding: 0;
-  margin: 0 0 70px;
+  margin: 0 0 50px;
 }
 
 .filter > li {
@@ -2748,6 +2756,7 @@ Google map
     right: auto;
     left: 0;
   }
+  .navbar-right{margin-top: 10px;}
   /* Comments */
   .comment .comment {
     margin-left: 75px;
@@ -2952,3 +2961,11 @@ Google map
 .popup_bg{width: 100%; height: 100vh; position: fixed; top:0;left: 0; background-color: rgba(0, 0, 0, 0.6); display: none; z-index: 999; }
 .popup_bg div{width: 80%; margin: 5% auto;}
 .post-images-slider{height: 500px;}
+
+
+
+.post-thumbnail img{width: 100%; height: 100%; position: relative; padding-left: 30px;}
+
+#bar{margin-left: 0; width: 35%; margin-top: 30px;}
+#park{position: absolute; padding-left: 90px; margin-top: 20px;}
+#seo{width: 26%; margin-left: 25px;}
