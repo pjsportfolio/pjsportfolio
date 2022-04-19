@@ -12,6 +12,22 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
     $(document).ready(function(){
 
 
+
+        /*popup-cafe24*/ 
+        $('.work-detail_page a').each(function(){
+            $(this).click(function(){
+                var a = $(this); //=>현재 클릭한 a 태그만 찾기 위해
+                var aHref = $(this).attr('href');
+                $('.popup_bg > div').hide(); //팜업 오픈 버튼을 누르면 나머지 싹 닫기 위해
+                $('.popup_bg').show();
+                $(aHref).show(); //연결된 팝업열기
+            }); //$(this).click
+        });
+       $('.popup_bg button').click(function(){
+           $('.popup_bg').hide();
+       });
+
+
         /*popup*/ 
         $('.work-item a').each(function(){
             $(this).click(function(){

@@ -2388,7 +2388,7 @@ Google map
 
 .widget .widget-title {
   border-bottom: 1px dotted #7666bf;
-  font-size: 14px;
+  font-size: 30px;
   padding: 0 0 10px;
   margin: 0 0 15px;
   color: #7666bf;
@@ -2959,8 +2959,15 @@ Google map
 
 /*************popup*****************************/
 .popup_bg{width: 100%; height: 100vh; position: fixed; top:0;left: 0; background-color: rgba(0, 0, 0, 0.6); display: none; z-index: 999; }
-.popup_bg div{width: 80%; margin: 5% auto;}
+.popup_bg div{width: 80%; margin: 5% auto; height: 80%;}
 .post-images-slider{height: 500px;}
+
+.work-detail_page_size{height: 100%; overflow-y: scroll;}
+.work-detail_page_size img{width: 100%;}
+
+.baaner-detail_size{height: 100%; overflow-y: scroll;}
+.baaner-detail_size img{width: 100%;}
+
 
 
 
