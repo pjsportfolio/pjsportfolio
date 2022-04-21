@@ -1255,7 +1255,7 @@ General Styles - Owlcarousel
   height: 70px;
   border: 0;
   border-radius: 0;
-  z-index: 1000;
+  z-index: 995;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -1281,14 +1281,14 @@ General Styles - Owlcarousel
   font-size: 22px;
   color: #fff;
   width: 65%;
-  height: 10pxpx;
+  height: 10px;
 }
 
 .navbar-brand>img{
   display: block;
   max-width: none;
-  width: auto;
-  height: 200%;
+  width: auto ;
+  height: 34px;
 }
 
 .navbar-custom .nav li > a {
@@ -2959,8 +2959,9 @@ Google map
 
 /*************popup*****************************/
 .popup_bg{width: 100%; height: 100vh; position: fixed; top:0;left: 0; background-color: rgba(0, 0, 0, 0.6); display: none; z-index: 999; }
-.popup_bg div{width: 80%; margin: 5% auto; height: 80%;}
-.post-images-slider{height: 500px;}
+.popup_bg > div{width: 80%; margin: 0 auto; padding: 50px; box-sizing: border-box; height: 90vh;}
+.popup_bg > div > div {margin-top: 20px;}
+
 
 .work-detail_page_size{height: 100%; overflow-y: scroll;}
 .work-detail_page_size img{width: 100%;}
@@ -2969,12 +2970,16 @@ Google map
 .baaner-detail_size img{width: 100%;}
 
 
-
-
 .post-thumbnail img{width: 100%; height: 100%; position: relative; padding-left: 30px;}
 
-#bar{margin-left: 0; width: 35%; margin-top: 30px; margin-left: 30px;}
-#park{position: absolute; padding-left: 30px; margin-top: 60px;}
+#bar{margin-left: 0; margin-top: 30px; margin-left: 30px;}
+#park{padding-left: 30px; margin-top: 60px;}
 #seo{width: 26%; margin-left: 25px;}
 
-#webslider{height: 500px;}
+#webslider{height: 450px;}
+@media (max-width:990px) {
+  #webslider{height: auto;}
+}
+@media (max-width:760px) {
+  #seo{width: 50%; margin: 0 auto;}
+}

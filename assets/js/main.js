@@ -19,12 +19,14 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
                 var a = $(this); //=>현재 클릭한 a 태그만 찾기 위해
                 var aHref = $(this).attr('href');
                 $('.popup_bg > div').hide(); //팜업 오픈 버튼을 누르면 나머지 싹 닫기 위해
+                $('.navbar-custom').css({'z-index':'1'}); // 팝업클릭시 네비감춤
                 $('.popup_bg').show();
                 $(aHref).show(); //연결된 팝업열기
             }); //$(this).click
         });
        $('.popup_bg button').click(function(){
            $('.popup_bg').hide();
+           $('.navbar-custom').css({'z-index':'999'}); // 네비 
        });
 
 
@@ -34,12 +36,14 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
                 var a = $(this); //=>현재 클릭한 a 태그만 찾기 위해
                 var aHref = $(this).attr('href');
                 $('.popup_bg > div').hide(); //팜업 오픈 버튼을 누르면 나머지 싹 닫기 위해
+                $('.navbar-custom').css({'z-index':'1'}); // 팝업클릭시 네비감춤
                 $('.popup_bg').show();
                 $(aHref).show(); //연결된 팝업열기
             }); //$(this).click
         });
        $('.popup_bg button').click(function(){
            $('.popup_bg').hide();
+           $('.navbar-custom').css({'z-index':'999'}); // 네비 
        });
 
 
